@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js"></script>
+</head>
+<body>
+<div class="container">
+        <!-- Ste navigation? -->
+        <div class="head">
+            <h1>Point of Sale System</h1>
+            <p>Process orders quickly and efficiently</p>
+        </div>
+
+        <!-- Dito lalabs yung mga pinindot na product, pang produce lang ng reciept -->
+        <div class="products">
+        <h2>Selected Products</h2>
+        <div id="selectedItems">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Qty</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="selectedItemsBody">
+                <!-- Items lalabas here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style="text-align: left;">Total: <span id="totalPrice">₱0.00</span>
+                    </td>
+                </tr>
+        </tfoot>
+
+        </table>
+        </div>
+            <button id="clearSelectedBtn">Clear Selected Items</button>
+        </div>
+
+        <!-- Dito ilagay yung mga menu sa admin  -->
+        <div class="menu">
+            <h2>Menu Items</h2>
+            <p>Please select a product listed below</p>
+            <div class="menuButtons">
+                <!-- menu buttons base on the what the admin puts -->
+
+            </div>
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="calculator">
+            <h2>Calculator</h2>
+            <p>Use this for quick price calculations</p>
+            <input type="text" id="display" disabled>
+            <div class="buttons">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>+</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>*</button>
+                <button>0</button>
+                <button>C</button>
+                <button>=</button>
+                <button>/</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
